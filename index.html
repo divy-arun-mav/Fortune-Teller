@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="bgimg.jpg" alt="" style="z-index:-1;position: absolute;top: 0;left: 0;width: 100%;height: 100vh;opacity: 0.5;">
+    <img src="chakra.png" alt="" srcset="" class="chakra">
+    <span>ENTER ANY NUMBER BETWEEN 1 to 14</span>
+    <div class="container">
+        <div class="box">
+            <input type="number" name="quantity" id="quantity" style="width: 150px;">
+            <input id="submit" type="submit" onclick="submit()">
+            <p id="toss"></p>
+            <p id="text1" style="font-size: 50px;" class="text one"></p>    
+            <p id="text2" style="font-size: 50px;" class="text two"></p>    
+            <input onclick="retry()" type="submit" value="RETRY YOUR LUCK" style="margin: 0;">      
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

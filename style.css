@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Anaheim';
+    overflow: hidden;
+}
+
+.chakra{
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    top: 22.2%;
+    left: 43.3%;
+    opacity: 0.2;
+    animation: gol 100s linear infinite;
+}
+
+@keyframes gol{
+    from{
+        transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+span{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50px;
+    left: 350px;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 600px;
+    width: 1000px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.box input{
+    border: none;
+    background-color: rgb(214, 214, 214);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box input:first-child{
+    font-size: 30px;
+}
+
+.box input:not(:first-child){
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box input:not(:first-child):hover{
+    background-color: rgb(182, 182, 182);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none ;
+}
+
+.box p{
+    width: 400px;
+    height: 150px;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+.text{
+    position: absolute;
+    font-size: 50px;
+    top: 400px;
+}
+.one{
+    left: 200px;
+}
+.two{
+    right: 200px;
+}
